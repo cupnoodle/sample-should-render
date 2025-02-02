@@ -1,4 +1,4 @@
-api_version = "2024-10"
+api_version = "2025-01"
 
 [[extensions]]
 # Change the merchant-facing name of the extension in locales/en.default.json
@@ -15,6 +15,7 @@ target = "admin.product-details.action.render"
 
 [extensions.targeting.should_render]
 module = "./src/condition/shouldRender.js"
+target = "admin.product-details.action.should-render"
 
 # Valid extension targets:
 
